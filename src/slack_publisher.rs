@@ -7,7 +7,7 @@ pub fn notify_slack(message: String) -> Option<bool> {
   println!("\n---\nmensaje:{}", message);
   let response = blocking::Client::new()
     .post(url)
-    .header("Content-Type", "application/json")
+    .header("Content-Type", "application/x-www-form-urlencoded")
     .body(message)
     .send();
   let r = response.unwrap();

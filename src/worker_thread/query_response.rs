@@ -2,8 +2,7 @@ use serde::{Deserialize, Serialize};
 
 #[derive(Deserialize, Serialize, Debug, Clone)]
 pub struct Source {
-  pub message: String,
-  pub log_group: String
+  pub message: String
 }
 
 #[derive(Deserialize, Serialize, Debug, Clone)]
